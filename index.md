@@ -36,8 +36,9 @@ knit        : slidify::knit2slides
 --- .class #id 
 
 ## Stock Explorer - How does it work?
-* The application fits a linear regression to stock data as a function of market data.
-* For example, given:  stock ticker = AA, end date = 2014/08/01, and duration = 200, <b><i>Stock Explorer</i></b> determines a model and R-squared of:
+* The application fits a linear regression model to stock data as a function of market (benchmark) data.
+* For example, given:  stock ticker = AA, end date = 2014/08/01, and duration = 200;
+* <b><i>Stock Explorer</i></b> determines a model and R-squared of:
 
 
 
@@ -65,7 +66,7 @@ knit        : slidify::knit2slides
 --- .class #id 
 
 ## Stock Explorer - Can it plot?
-* <b><i>Stock Explorer</i></b> plots stock returns and the model predictions over time.
+* <b><i>Stock Explorer</i></b> plots stock returns and the model predictions versus time.
 
 
 ```r
@@ -82,7 +83,7 @@ knit        : slidify::knit2slides
 
 --- .class #id 
 ## Stock Explorer - How about residuals?
-* Residuals are automatically calulated and plotted over time.
+* Residuals are automatically calculated and plotted versus time.
 
 
 ```r

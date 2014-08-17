@@ -43,8 +43,9 @@
 <article class="class" id="id" style="background:;">
   <h3>Stock Explorer - How does it work?</h3>
   <ul>
-<li>The application fits a linear regression to stock data as a function of market data.</li>
-<li>For example, given:  stock ticker = AA, end date = 2014/08/01, and duration = 200, <b><i>Stock Explorer</i></b> determines a model and R-squared of:</li>
+<li>The application fits a linear regression model to stock data as a function of market (benchmark) data.</li>
+<li>For example, given:  stock ticker = AA, end date = 2014/08/01, and duration = 200;</li>
+<li><b><i>Stock Explorer</i></b> determines a model and R-squared of:</li>
 </ul>
 
 <pre><code class="r">    lm1 &lt;- lm(stock ~ market, data=stockData)
@@ -68,7 +69,7 @@
 <article class="class" id="id" style="background:;">
   <h3>Stock Explorer - Can it plot?</h3>
   <ul>
-<li><b><i>Stock Explorer</i></b> plots stock returns and the model predictions over time.</li>
+<li><b><i>Stock Explorer</i></b> plots stock returns and the model predictions versus time.</li>
 </ul>
 
 <pre><code class="r">    par(mar=c(5,4,1,1), las=1)
@@ -86,7 +87,7 @@
 <article class="class" id="id" style="background:;">
   <h3>Stock Explorer - How about residuals?</h3>
   <ul>
-<li>Residuals are automatically calulated and plotted over time.</li>
+<li>Residuals are automatically calculated and plotted versus time.</li>
 </ul>
 
 <pre><code class="r">    par(mar=c(5,4,1,1), las=1)
